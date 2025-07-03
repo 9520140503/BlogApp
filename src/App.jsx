@@ -28,7 +28,7 @@ function App() {
   return !loading ? (
     <div>
       <Header/>
-        <main className='bg-gradient-to-r from-blue-900 via-black to-purple-950 min-h-screen w-full '>
+        <main className='bg-gradient-to-r from-blue-900 via-black to-purple-950 min-h-screen w-full py-32'>
           <Outlet/>
         </main>
       <Footer/>

@@ -1,8 +1,11 @@
 import React from 'react'
+import { Login as LoginFormat} from '../Components'
 
 function Login() {
   return (
-    <div>Login</div>
+    <div>
+      <LoginFormat/>
+    </div>
   )
 }
 

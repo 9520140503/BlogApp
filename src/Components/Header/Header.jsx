@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import Logout from './Logout'
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status)
@@ -39,19 +40,19 @@ function Header() {
         </Link>
       </div>
       <div>
-        <ul className='flex text-sm gap-5 sm:gap-12 sm:text-md md:text-xl  md:font-semibold md:gap-'>
+        <ul className='flex items-center justify-center text-xs gap-5 sm:gap-8 md:text-md  md:font-semibold md:gap-20'>
           {navItems.map((item) => (
             item.status?(
               <li key={item.slug}>
-                <Link to={item.slug}>
+                <Link to={item.slug} className='hover:bg-purple-900 p-2 rounded-lg duration-500'>
                 {item.name}
                 </Link>
               </li>
             ) : (null)
           ))}
           {authStatus && (
-            <li>
-              Logout
+            <li className='hover:bg-purple-900 p-2 rounded-lg duration-500 cursor-pointer'>
+              <Logout/>
             </li>
           )}
         </ul>

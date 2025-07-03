@@ -1,8 +1,9 @@
 import React from 'react'
+import {SignUp as SignUpFormatter} from "../Components"
 
 function SignUp() {
   return (
-    <div>SignUp</div>
+    <SignUpFormatter/>
   )
 }
 
