@@ -5,7 +5,7 @@ const Input = forwardRef(function Input({
 },ref){
     const id = useId()
     return <div>
-        {label && <label className="text-white" htmlFor={id}>{label}</label>}
+        {label && <label className="text-blue-500" htmlFor={id}>{label}</label>}
         <input type={type}
         className={className}
         ref={ref}

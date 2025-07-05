@@ -8,6 +8,8 @@ import Login from "./Login";
 import Input from "./Input";
 import RTE from "./RTE";
 import Select from "./Select"
+import FlipCard from "./FlipCard"
+import Empty from "./EmptyShow";
 
 
-export {Header,Footer,Loading,AuthLayout,Button,SignUp,Login,Input,RTE,Select};
+export {Header,Footer,Loading,AuthLayout,Button,SignUp,Login,Input,RTE,Select,FlipCard,Empty};

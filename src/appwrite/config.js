@@ -13,9 +13,9 @@ class Service{
     }
 
     //Create: 	Creates a new blog post using a unique slug as the ID
-    async createPost({title,slug,content,featuredimage,status,userId}){
+    async createPost({title,slug,content,featuredImage,status,userId}){
         try {
-            const data = {title,content,featuredimage,status,userId}
+            const data = {title,content,featuredImage,status,userId}
             return await this.database.createDocument(
                 conf.appwriteDataBaseId,
                 conf.appwriteCollectionId,
@@ -28,9 +28,9 @@ class Service{
     }
 
     //Update: Updates a blog post by its slug
-    async updatePost(slug,{title,content,featuredimage,status}){
+    async updatePost(slug,{title,content,featuredImage,status}){
         try {
-            const data = {title,content,featuredimage,status}
+            const data = {title,content,featuredImage,status}
             return await this.database.updateDocument(
                 conf.appwriteDataBaseId,
                 conf.appwriteCollectionId,
@@ -114,9 +114,9 @@ class Service{
     }
 
     // Gets a preview image URL of a file (to use in <img>)
-    async getFilePreview(fileId){
+    async getFileView(fileId){
         try {
-            return await this.bucket.getFilePreview(
+            return await this.bucket.getFileView(
                  conf.appwriteBucketId,
                  fileId
             )

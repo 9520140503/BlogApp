@@ -13,12 +13,16 @@
     "@reduxjs/toolkit": "^2.8.2",
     "@tinymce/tinymce-react": "^6.2.1",
     "appwrite": "^18.1.1",
+    "html-react": "^0.0.20",
+    "html-react-parser": "^5.2.5",
+    "parser": "^0.1.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.59.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.3",
-    "react-toastify": "^11.0.5"
+    "react-toastify": "^11.0.5",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
