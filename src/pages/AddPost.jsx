@@ -30,8 +30,7 @@ function AddPost({post}) {
             ...data,featuredImage: file ? file.$id : undefined
         })
         if(dbPost){
-          navigate('/all-posts')
-          // TODO: ------
+          navigate(`/all-posts/`)
           console.log("Post added sucessfully")
         }
 
