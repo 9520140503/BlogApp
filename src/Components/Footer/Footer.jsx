@@ -8,21 +8,21 @@ function Footer() {
 
         {/* Logo */}
         <Link to="/" className="text-xl font-semibold hover:opacity-80 transition">
-          Logo
+          BlogPost
         </Link>
 
         {/* Internal Links */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-blue-300">
           <Link to="/" className="hover:text-white transition">Home</Link>
           <Link to="/privacy-policy" className="hover:text-white transition">Privacy Policy</Link>
           <Link to="/terms-of-service" className="hover:text-white transition">Terms of Service</Link>
         </div>
 
         {/* External Links */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a>
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Instagram</a>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm opacity-80 text-blue-300">
+          <a href="https://github.com/9520140503" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
+          <a href="https://linkedin.com/in/vishesh-raj" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a>
+          <a href="https://www.instagram.com/vishesh_rajput_2344" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Instagram</a>
         </div>
 
         {/* Copyright */}

@@ -16,10 +16,10 @@ function Header() {
   ]
 
   return (
-    <header className="w-full fixed top-4 z-50 px-4">
-      <nav className="bg-gradient-to-r from-blue-900 via-black to-purple-950 text-white max-w-6xl mx-auto rounded-2xl shadow-lg shadow-green-500 px-6 py-4">
+    <header className="w-full fixed top-4 z-50 px-4 backdrop-blur-lg">
+      <nav className="bg-gradient-to-r from-blue-900 via-black to-purple-950 text-white max-w-6xl mx-auto rounded-2xl shadow-xl shadow-green-500 px-6 py-4 border-4 border-white">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-green-400">
+          <div className="text-2xl font-bold text-green-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-green-400 to-blue-400">
             <Link to="/">BlogPost</Link>
           </div>
 
@@ -38,7 +38,7 @@ function Header() {
                 <li key={item.slug}>
                   <Link
                     to={item.slug}
-                    className="px-4 py-2 rounded-full hover:bg-purple-800 transition-all duration-300"
+                     className="px-4 py-2 rounded-full transition-all sm:text-lg duration-300 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-white to-green-400 hover:bg-purple-800 hover:text-white" 
                   >
                     {item.name}
                   </Link>
@@ -46,7 +46,7 @@ function Header() {
               ) : null
             )}
             {authStatus && (
-              <li className="px-4 py-2 rounded-full hover:bg-red-700 transition">
+              <li className="px-4 py-2 rounded-full hover:bg-red-700 transition bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-white to-green-400 sm:text-lg">
                 <Logout />
               </li>
             )}
@@ -61,7 +61,7 @@ function Header() {
                 <Link
                   key={item.slug}
                   to={item.slug}
-                  className="w-full text-end px-4 py-2 rounded-md hover:bg-purple-800 transition"
+                  className="w-full text-end px-4 py-2 rounded-md hover:bg-purple-800 transition "
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

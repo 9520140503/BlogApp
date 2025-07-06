@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from "../Components";
 import appwriteService from "../appwrite/config"
 
-function FlipCard({ post,deletePost }) {
+function FlipCard({ post,onDelete }) {
     const [imageUrl,setUrl] = useState(null)
 
     useEffect(() => {
@@ -15,7 +15,7 @@ function FlipCard({ post,deletePost }) {
             setUrl(url)
           }
         }).catch(error => {
-           console.error("Image failed to load:", error.message);
+           console.error("Image failed to load:",error.message);
         })
       }
     },[post.featuredImage])
@@ -23,7 +23,7 @@ function FlipCard({ post,deletePost }) {
     const handleDelete = async() => {
       try {
         await  appwriteService.deletePost(post.$id)
-        deletePost(post.$id)
+        onDelete(post.$id)
       } catch (error) {
         console.error(" failed to delete:", error.message);
       }

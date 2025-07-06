@@ -26,7 +26,7 @@ function AllPosts() {
 
   if(posts.length === 0){
     return  <div className='flex flex-col justify-center w-fit mx-auto'>
-       <h1 className='bg-clip-text bg-gradient-to-r from-purple-500 via-white to-orange-500 text-transparent text-center text-xl sm:text-3xl sm:font-bold'>There is not post to show</h1>
+       <h1 className='bg-clip-text bg-gradient-to-r from-purple-500 via-white to-orange-500 text-transparent text-center text-xl sm:text-4xl sm:font-bold mt-32'>There is no post to show</h1>
       <Empty />
     </div>
   }
